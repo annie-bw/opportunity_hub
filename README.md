@@ -1,3 +1,16 @@
+<img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/ef6a22fb-1664-49bf-982b-0df2e344f74a" />## 🎥 Demo Video
+
+https://www.loom.com/share/b54cf3b5f99b409ca6b4ada69e3018cb
+
+OPPORTUNITY SEARCH PREVIEW
+<img width="1914" height="665" alt="image" src="https://github.com/user-attachments/assets/f384d85d-dda2-4e93-a157-027a48183f78" />
+
+
+
+
+
+
+
 # Global Opportunity Hub 🌍
 
 A web application that aggregates and displays global opportunities including internships, fellowships, grants, and competitions for students and companies. The platform uses Google Custom Search API to fetch real-time opportunities from across the web.
@@ -289,6 +302,4 @@ This project is created for educational purposes as part of a web development as
 - GitHub: (https://github.com/annie-bw/opportunity_hub)
 - Project Link: [https://github.com/annie-bw/opportunity-hub](https://github.com/annie-bw/opportunity-hub)
 
-## 🎥 Demo Video
 
-[Link to demo video - under 2 minutes]
