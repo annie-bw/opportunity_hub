@@ -1,8 +1,10 @@
-<img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/ef6a22fb-1664-49bf-982b-0df2e344f74a" />## 🎥 Demo Video
+# 🎥 Demo Video
 
-https://www.loom.com/share/b54cf3b5f99b409ca6b4ada69e3018cb
+https://www.loom.com/share/ce57cf4d2c1648949985d94f6746d489
 
-OPPORTUNITY SEARCH PREVIEW
+
+# OPPORTUNITY SEARCH PREVIEW
+
 <img width="1914" height="665" alt="image" src="https://github.com/user-attachments/assets/f384d85d-dda2-4e93-a157-027a48183f78" />
 
 
