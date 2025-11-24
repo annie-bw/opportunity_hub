@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Opportunity Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+
+    <!-- header and search bar -->
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="app-title">Opportunity Hub</h1>
+
+            <!-- manual search form -->
+            <form id="manual-search-form" class="search-form">
+                <div class="search-container">
+                    <input type="text" id="manual-search-input" placeholder="Quick Search for a specific grant or internship..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <!-- navigation bar qwith categories -->
+    <nav class="nav-bar">
+        <div class="container nav-content">
+
+            <!-- student dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-button">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+                    Student
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" data-category="student-internships">Internships</a>
+                    <a href="#" class="dropdown-item" data-category="student-summits">Summits</a>
+                    <a href="#" class="dropdown-item" data-category="student-fellowships">Fellowships</a>
+                    <a href="#" class="dropdown-item" data-category="student-misc">Miscellaneous</a>
+                </div>
+            </div>
+
+            <!-- company dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-button">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 4V2m-2 4h4m1 10.5V17m0 0V15m0 2h-4"></path></svg>
+                    Company
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" data-category="company-tech">Tech & Innovation</a>
+                    <a href="#" class="dropdown-item" data-category="company-agriculture">Agriculture</a>
+                    <a href="#" class="dropdown-item" data-category="company-environment">Environment & Energy</a>
+                    <a href="#" class="dropdown-item" data-category="company-education">Education</a>
+                    <a href="#" class="dropdown-item" data-category="company-healthcare">Healthcare</a>
+                    <a href="#" class="dropdown-item" data-category="company-arts">Arts and Culture</a>
+                    <a href="#" class="dropdown-item" data-category="company-manufacturing">Manufacturing</a>
+                    <a href="#" class="dropdown-item" data-category="company-community">Community Development</a>
+                </div>
+            </div>
+
+            <!-- ngo dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-button">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20h-5.07c-1.396-0.084-2.753-0.56-3.882-1.378L9 16m2.463 3.616L12 18m2.537 1.616A4.5 4.5 0 0021 16.5m-18 0a4.5 4.5 0 007.5-3.328M4.5 20c.576 0 1.12.04 1.652.12M12 14c-1.84 0-3.364-1.332-3.832-3.15M12 14a4.5 4.5 0 01-4.5 4.5M12 14v-2M9 11c0-1.657 1.343-3 3-3s3 1.343 3 3"></path></svg>
+                    NGO
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" data-category="ngo-tech">Tech & Innovation Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-agriculture">Agriculture Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-environment">Environment & Energy Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-education">Education Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-healthcare">Healthcare Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-arts">Arts and Culture Grants</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-manufacturing">Manufacturing/Social Enterprise</a>
+                    <a href="#" class="dropdown-item" data-category="ngo-community">Community Development Grants</a>
+                </div>
+            </div>
+
+            <!-- individual dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-button">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    Individual
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" data-category="individual-grants">Grants & Funding</a>
+                    <a href="#" class="dropdown-item" data-category="individual-fellowships">Fellowships</a>
+                    <a href="#" class="dropdown-item" data-category="individual-creative">Creative Project Funding</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- main-->
+    <main class="container main-content-area">
+        <h2 id="search-label" class="search-label">
+            Explore Global Opportunities
+        </h2>
+         <div id="intro-content" class="app-description">
+            <p class="intro-content"><strong>Stop wasting hours searching for opportunities.</strong></p>
+            <p class="intro-content">Finding grants, internships, fellowships, and competitions shouldn't feel like a full-time job. You spend hours scrolling through countless websites, checking if you're eligible, wondering if the deadline has passed, only to find opportunities that don't even apply to you.</p>
+            <p class="intro-content"><strong>Opportunity Hub solves this problem.</strong> We search the entire web and bring together ALL opportunities in your chosen category—whether you're a student, company, NGO, or individual. No more scattered searching across dozens of sites.</p>
+            <p class="intro-content">Simply select your category above, and we'll show you every relevant opportunity currently available, sorted from most recently published first. We only show opportunities from 2025 onwards—no outdated listings from 2024 or earlier.</p>
+            <p class="intro-content"><strong>Your time is valuable. Let us do the searching for you.</strong></p>
+         </div>
+        <div id="loading" class="dev-note" style="display: none;">
+            <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+            </div>
+        <p id="loading-text" class="loading-text">Fetching opportunities</p>
+        </div>
+        <div id="results" class="results-grid">
+            <!-- opportunity cards will be added here by javascript -->
+        </div>
+         <div style="display:none"><span id="current-query"></span></div>
+
+</main>
+<script type="module" src="apiFetch.js"></script>
+<script type="module" src="apiController.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
