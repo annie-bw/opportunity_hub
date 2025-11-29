@@ -118,7 +118,7 @@ Option B - Live Server (VS Code extension):
 
 6. **Access the application**
 ```
-http://localhost:8080
+http://localhost:5500
 ```
 
 ## 🌐 Deployment
